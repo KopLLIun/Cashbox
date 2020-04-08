@@ -3,9 +3,9 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.concurrent.Semaphore;
 
+//https://github.com/SergiiShapoval/EpamCourses/tree/master/src/ua/epam/sergiishapoval/homework/hw9
 public class Main {
     public static void main(String[] args) {
-        Semaphore wait = new Semaphore(1);
         List<Cashbox> cashboxes = Arrays.asList(new Cashbox(new Semaphore(1)),new Cashbox(new Semaphore(1)));
         List<Customer> customers = new ArrayList<>();
         Customer customer1 = new Customer(Arrays.asList(new Product("product1")));
